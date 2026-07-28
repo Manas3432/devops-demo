@@ -29,16 +29,16 @@ Live application + Prometheus/Grafana monitoring
 
 ## Tech Stack
 
-| Layer | Tool |
-|---|---|
-| Application | Spring Boot (Java 17) |
-| Build tool | Maven |
-| Source control | GitHub |
-| CI/CD orchestration | Jenkins |
-| Containerization | Docker (multi-stage build) |
-| Image registry | Docker Hub |
-| Monitoring | Prometheus + Grafana |
-| Auto-trigger | GitHub Webhook (via ngrok tunnel to local Jenkins) |
+| Layer               | Tool                                               |
+| ------------------- | -------------------------------------------------- |
+| Application         | Spring Boot (Java 17)                              |
+| Build tool          | Maven                                              |
+| Source control      | GitHub                                             |
+| CI/CD orchestration | Jenkins                                            |
+| Containerization    | Docker (multi-stage build)                         |
+| Image registry      | Docker Hub                                         |
+| Monitoring          | Prometheus + Grafana                               |
+| Auto-trigger        | GitHub Webhook (via ngrok tunnel to local Jenkins) |
 
 ## Features
 
@@ -49,20 +49,20 @@ Live application + Prometheus/Grafana monitoring
 
 ## Endpoints
 
-| Endpoint | Description |
-|---|---|
-| `/hello` | Basic status check |
-| `/version` | App version info |
-| `/actuator/health` | Health check |
+| Endpoint               | Description                     |
+| ---------------------- | ------------------------------- |
+| `/hello`               | Basic status check              |
+| `/version`             | App version info                |
+| `/actuator/health`     | Health check                    |
 | `/actuator/prometheus` | Metrics for Prometheus scraping |
 
 ## Pipeline in Action
 
-*(Add a screenshot here of your Jenkins pipeline showing all stages green — "Finished: SUCCESS")*
+![Jenkins Pipeline](green-pipeline.png)
 
 ## Monitoring Dashboard
 
-*(Add a screenshot here of your Grafana dashboard with the 4 panels)*
+![Grafana Dashboard](grafana-dashboard.png)
 
 ## Impact
 
